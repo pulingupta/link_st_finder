@@ -1,0 +1,29 @@
+{
+  "name": "linkstations",
+  "version": "0.0.1",
+  "description": "A sample Node.js app",
+  "engines": {
+    "node": "8.6.0"
+  },
+  "scripts": {
+    "start": "node index.js",
+    "dev": "node index-dev.js",
+    "dev:test": "node ./node_modules/mocha/bin/mocha src-test"
+  },
+  "main": "index.js",
+  "dependencies": {
+    "lodash": "^4.17.4",
+    "morgan": "~1.6.1",
+    "prompt": "*",
+    "chai": "*",
+    "mocha": "*",
+    "rewire": "*"
+  },
+  "keywords": [
+    "node",
+    "express"
+  ],
+  "devDependencies": {
+    "mocha": "*"
+  }
+}
