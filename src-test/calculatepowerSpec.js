@@ -30,24 +30,20 @@ describe("validate station data", function () {
 });
 
 describe("Link Station Power Finder", function() {
-    describe("calculate Power with correct inputs", function () {
-        it("returns right power value as per logic", function () {
-            const calcPower = powerFinder.__get__('calcPower')
-            const power = calcPower(10, 5)
-            expect(power.power).to.equal(25);
-        })
+    it("returns right power value as per logic for function calcPower", function () {
+        const calcPower = powerFinder.__get__('calcPower')
+        const power = calcPower(10, 5)
+        expect(power.power).to.equal(25);
     })
-    describe("calculate Station Power", function () {
-        it("returns right power value as per logic", function () {
-            const findStationPower = powerFinder.__get__('findStationPower')
-            const power = findStationPower(10, 5)
-            expect(power.power).to.equal(25);
-        })
-        it("returns right power value as per logic for distance greater than reach", function () {
-            const findStationPower = powerFinder.__get__('findStationPower')
-            const power = findStationPower(5, 10)
-            expect(power.power).to.equal(0);
-        })
+    it("returns right power value as per logic for function findStationPower", function () {
+        const findStationPower = powerFinder.__get__('findStationPower')
+        const power = findStationPower(10, 5)
+        expect(power.power).to.equal(25);
+    })
+    it("returns right power value as per logic for distance greater than reach", function () {
+        const findStationPower = powerFinder.__get__('findStationPower')
+        const power = findStationPower(5, 10)
+        expect(power.power).to.equal(0);
     })
 })
 
