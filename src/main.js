@@ -22,10 +22,6 @@ const validateDeviceLocationCoordinate = (deviceLocation) => {
     return !_.isNaN(_.parseInt(deviceLocation.latitude)) && !_.isNaN(_.parseInt(deviceLocation.longitude))
 }
 
-function isNumeric (input) {
-    return ((typeof x === 'number' || typeof x === 'string') && !_.isNaN(Number(x)));
-}
-
 const getAllStations = () => {
     return [[0, 0, 10], [20, 20, 5], [10, 0, 12]];
 
